@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light: N/A"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="10dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Light: 500 lux"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text_proximity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proximity: N/A"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="10dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_light"
+        tools:text="Proximity: 2 cm"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pressure: N/A"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="10dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_proximity"
+        tools:text="Pressure: 1013.25 hPa"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS: N/A"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="10dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_pressure"
+        tools:text="GPS: 37.421998, -122.084"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/text_compass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compass: N/A"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="10dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_gps"
+        tools:text="Compass: 270 degrees"
+        android:textStyle="bold"/>
+
+    <!-- Button to close the activity -->
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="160dp"
+        android:backgroundTint="#FF0000"
+        android:onClick="closeActivity"
+        android:text="Close"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="271dp"
+        android:layout_height="412dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="312dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/compass_icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>
