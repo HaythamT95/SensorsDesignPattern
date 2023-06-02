@@ -25,7 +25,7 @@ To use this project, follow the steps below:
 2) Open the project in Android Studio.
 3) Build and run the project on an Android device or emulator.
 
-## OR Download the APK file to your device
+## OR Download the APK file to your device https://drive.google.com/file/d/1GSTERc869z_daDvcxgK0wco-7O6TMAvZ/view?usp=drive_link
 
 ## Usage
 Upon running the application, the main screen will display the readings from the five different sensors: Light, Proximity, Pressure, GPS (longitude, latitude), and Compass. Each sensor reading will be updated in real-time, providing you with the current values.
